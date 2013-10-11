@@ -1,0 +1,10 @@
+<div data-role="view" id="result-view" data-id="result-view"
+     data-layout="main-layout" data-title="Search for Recipes"
+     data-show="app.result.init">
+    <div id="fields" style="height:50%">
+        <h2 style="text-align:center">Type your ingredients separated with comma(,)</h2>
+        <textarea type="text" id="inputText" style="width:100%; background-color:silver; height:150px;"></textarea>
+    </div>
+    <a data-role="button" data-bind="events: {click: getRecipe}" style="width:80%; margin-left:7%; margin-top:10%; text-align:center">Get Recipes</a>
+  <div id="results"></div>
+</div>

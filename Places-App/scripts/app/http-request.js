@@ -1,8 +1,8 @@
 window.httpRequest = (function(){
-    function getJSON(url){
+    function getJSON(recipes){
         var promise = new RSVP.Promise(function(resolve, reject){
             $.ajax({
-                url:url,
+                url:"http://www.recipepuppy.com/api/?i="+recipes,
                 type:"GET",
                 dataType:"json",
                 contentType:"application/json",
