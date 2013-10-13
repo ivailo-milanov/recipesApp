@@ -1,0 +1,19 @@
+<link href="../styles/app.css"/>
+<div data-role="view" id="history-view" data-id="history-view"
+     data-layout="main-layout" data-title="Search for Recipes"
+     data-show="app.history.init">
+    <div>
+        <br/>
+        <br/>
+    </div>
+    <div id="history">
+    </div>
+    <div style="text-align:center">
+        <a id="clear" data-role="button" data-bind="events: {click: clearHistory}" 
+           style="width:80%; border-radius:10px; margin-top:10%; text-align:center">Clear History</a>
+        <textarea type="text" id="rec" style="font-size:20px; font-weight:bold; width:95%; background-color:gray; margin-top:10%; height:40px;"></textarea>
+        <a id="getCurrent" data-role="button" data-bind="events: {click: getCurrent}" 
+           style="width:80%; border-radius:10px; margin-top:10%; text-align:center">Get Current Recipe</a>
+    </div>
+    <div id="result" style="text-align:center"></div>
+</div>

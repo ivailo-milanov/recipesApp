@@ -4,7 +4,11 @@ var app = app || {};
     
     document.addEventListener("deviceready", function() {
         //app.servicesBaseUrl = "http://localhost:62354/api/";
-        app.servicesBaseUrl = "http://the-places.apphb.com/api/";
+        var history= window.localStorage.getItem("history");
+        if(history===null){
+            var logs=[];
+            window.localStorage.setItem("history", JSON.stringify(logs));
+        }
         
         var kendoApp = new kendo.mobile.Application(document.body);
     });    
